@@ -57,17 +57,22 @@ section::after {
   height: 100%;
   width: 100%;
   border-radius: 25px;
+  padding: 25px;
   backdrop-filter: blur(25px);
   background: rgba(255, 255, 255, 0.1);
   box-shadow: 0 25px 45px rgba(0, 0, 0, 0.25) border: 1px solid rgba(255, 255, 255, 0.1);
 }
 
-.front-face header{
-  
+.front-face header,
+.front-face .logo {
+  display: flex;
+  align-items: center;
+
 }
 
 .front-face .logo img {
   width: 48px;
+  margin-right: 10px;
 
 }
 
@@ -78,4 +83,17 @@ h5 {
 
 .front-face .chip {
   width: 50px;
+}
+
+.front-face header {
+  justify-content: space-between;
+}
+
+.front-face .card-details {
+  display: flex;
+  align-items: flex-end;
+  margin-top: 40px;
+  justify-content: space-between;
+
+
 }
